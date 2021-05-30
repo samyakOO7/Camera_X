@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".MainActivity">
+
+    <!-- add Camera Button to open the Camera-->
+
+    <!-- add ImageView to display the captured image-->
+
+
+    <TextureView
+        android:id="@+id/tv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <com.google.android.material.button.MaterialButton
+
+        android:id="@+id/button1"
+        style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
+        android:layout_width="69dp"
+
+        android:layout_height="67dp"
+
+        android:layout_marginStart="60dp"
+        android:layout_marginBottom="28dp"
+        app:backgroundTint="#FFFFFF"
+        app:cornerRadius="28dp"
+        app:icon="@android:drawable/ic_menu_camera"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button3"
+        app:layout_constraintHorizontal_bias="0.22"
+        app:layout_constraintStart_toEndOf="@+id/button2"
+        tools:ignore="MissingConstraints" />
+
+    <com.google.android.material.button.MaterialButton
+
+        android:id="@+id/button3"
+        style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
+        android:layout_width="37dp"
+
+        android:layout_height="38dp"
+
+        android:layout_marginEnd="52dp"
+        android:layout_marginBottom="40dp"
+        app:backgroundTint="#FFFFFF"
+        app:cornerRadius="28dp"
+        app:icon="@android:drawable/stat_notify_sync_noanim"
+        app:iconGravity="top"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <com.google.android.material.button.MaterialButton
+
+        android:id="@+id/button2"
+        style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
+        android:layout_width="37dp"
+
+        android:layout_height="38dp"
+
+        android:layout_marginStart="40dp"
+        android:layout_marginBottom="40dp"
+        android:enabled="true"
+        app:backgroundTint="#FFFFFF"
+
+        app:cornerRadius="28dp"
+        app:icon="@android:drawable/ic_menu_view"
+        app:iconGravity="top"
+        app:iconTintMode="src_in"
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
